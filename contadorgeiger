@@ -32,7 +32,7 @@ int verde1 = 3; // Se define el pin 5 con la palabra verde1
 int rojo2 = 8; // Se define el pin 3 con la palabra rojo2
 int amarillo2 = 6; // Se define el pin 4 con la palabra amarillo2
 int verde2 = 4; // Se define el pin 5 con la palabra verde2
-int inicializa;
+/*int inicializa; La corrección serÍa?*/ int inicializa =2; //DEFINO UNA VARIABLE DE ENTRADA PARA LA LECTURA DE LOS DATOS DEL PIN NUMERO 2 
 
 // 2 verdes Muy Seguro
 // 1 Verde Seguro
@@ -41,14 +41,25 @@ int inicializa;
 // 1 Rojo Muy Alto
 // 2 Rojos Peligro
 
-void setup() {
-  // Inicializa Semaforo
+void setup() { /*
+ // Inicializa Semaforo
 //  pinMode(3, OUTPUT);
 //  pinMode(4, OUTPUT);
 //  pinMode(5, OUTPUT);
 //  pinMode(6, OUTPUT);
 //  pinMode(7, OUTPUT);
 //  pinMode(8, OUTPUT);
+*/
+// LA CORRECCIÓN SERIA DE ESTA FORMA
+
+  pinMode(2, INPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+
 for (int e = 3; e < 9; e++)
   {
     pinMode(e, OUTPUT);
